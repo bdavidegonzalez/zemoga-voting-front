@@ -2,6 +2,7 @@
 @import './card.css';
 @import './card-desktop.css';
 @import './progress-bar.css';
+@import './toast.css';
 
 :root {
     --color-green-positive: 60, 187, 180;

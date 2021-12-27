@@ -80,6 +80,9 @@ export default {
             negative: votes.negative,
           },
         });
+        this.$store.commit('toast/setToastImg', '/ic_good.svg');
+        this.$store.commit('toast/setToastText', 'Thank You for Voting');
+        this.$store.commit('toast/setToastVariant', 'toast--success');
       } catch (e) {
         alert(e);
         return;
@@ -94,6 +97,9 @@ export default {
             negative: (votes.negative += 1),
           },
         });
+        this.$store.commit('toast/setToastImg', '/ic_incorrect.svg');
+        this.$store.commit('toast/setToastText', 'Thank You for Voting');
+        this.$store.commit('toast/setToastVariant', 'toast--success');
       } catch (e) {
         alert(e);
         return;

@@ -28,6 +28,7 @@
         </div>
     </nav>
      <nuxt />
+     <toast></toast>
 </div>
 </template>
 

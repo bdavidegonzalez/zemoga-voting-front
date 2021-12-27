@@ -12,12 +12,7 @@
 </template>
 
 <script lang="ts">
-import mobileVotes from '~/components/mobile-votes.vue';
-import voting from '~/components/mobile-votes.vue';
-
-
 export default {
-  components: { mobileVotes },
   name: 'home',
   data: () => ({
     //

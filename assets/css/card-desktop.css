@@ -18,7 +18,7 @@
 
 .votes__desc-desktop {
     color: var(--color-white);
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
@@ -30,7 +30,7 @@
 
 .votes__title-desktop > h2 {
     color: var(--color-white);
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.75rem;
@@ -38,7 +38,7 @@
 
 .votes__title-desktop > p {
     color: var(--color-white);
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
@@ -46,7 +46,7 @@
 
 .votes__featured-card-desktop > strong{
     color: var(--color-white);
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
