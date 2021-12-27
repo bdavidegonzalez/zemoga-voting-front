@@ -1,0 +1,103 @@
+.v-card {
+
+}
+
+.v-card__description {
+    margin: 1rem;
+    padding-top: 6rem;
+}
+
+.votes__featured-card {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;margin: 3rem;
+    overflow: hidden;
+    max-height: 25rem;
+    gap: 4px;
+}
+
+.v-card-img{
+    background-image: var(--img-background);
+    background-repeat: no-repeat;    
+    background-size: cover;
+}
+
+.v-card__title{
+    color: var(--color-white);
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.875rem;
+}
+.v-card__desc{
+    color: var(--color-white);
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.938rem;
+}
+
+.v-card__date {
+    color: var(--color-white);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-button-votes[aria-label="thumbs up"] {
+    background-color: rgba(var(--color-green-positive), .8);
+    border: none;
+    margin: 0.2rem;
+}
+
+.icon-button-votes[aria-label="thumbs up"]:hover {
+    background-color: rgba(var(--color-green-positive), 1);
+}
+
+.icon-button-votes[aria-label="thumbs down"] {
+    background-color: rgba(var(--color-yellow-negative), .8);
+    border: none;
+    margin: 0.2rem;
+}
+
+.icon-button-votes[aria-label="thumbs down"]:hover {
+    background-color: rgba(var(--color-yellow-negative), 1);
+}
+
+.votes__featured-img {
+    padding: 0.2rem;
+}
+
+.votes__featured-buttom{
+    transition: all .5s ease;
+    color: #fff;
+    border: 1px solid var(--color-white);
+    background: rgba(0, 0, 0, 0.6);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 0.938rem;
+    outline: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 8.438rem;
+    margin: 0.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .v-card-img{
+        background-repeat: no-repeat;    
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 3%, #888888 39.79%, #666666 54%, rgba(51, 51, 51, 0.4) 100%), var(--img-background);
+        background-size: cover, contain;
+        background-position: center, left bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .v-card-img{
+        background-repeat: no-repeat;    
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 3%, #888888 39.79%, #666666 54%, rgba(51, 51, 51, 0.4) 100%), var(--img-background);
+        background-size: cover, contain;
+        background-position: center, left bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+}

@@ -37,12 +37,40 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/moment',
+    '@nuxtjs/firebase'
   ],
+
+  firebase: {
+      config: {
+        apiKey: "AIzaSyBEPMJgJdyonCUKDEWmu_4-bX2XjOTA6hY",
+        authDomain: "zemoga-bbd15.firebaseapp.com",
+        databaseURL: "https://zemoga-bbd15-default-rtdb.firebaseio.com",
+        projectId: "zemoga-bbd15",
+        storageBucket: "zemoga-bbd15.appspot.com",
+        messagingSenderId: "1028238523450",
+        appId: "1:1028238523450:web:a68a1bafd79fcabd270903",
+        measurementId: "G-MWXK80MFBJ"
+      },
+      lazy: false,
+      services: {
+        database: true
+      }
+  },
+
+  database: {
+    emulatorPort: 9000,
+    emulatorHost: 'localhost',
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
+  },
+
+  env: {
+    FIREBASE_APIKEY: process.env.FIREBASE_APIKEY
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

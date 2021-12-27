@@ -1,0 +1,43 @@
+.progress {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  color: var(--color-white);
+}
+
+.color-width {
+  width: var(--progress-votes);
+}
+.bg-positive{
+  background-color: var(--color-positive);
+
+}
+.bg-negative{
+  background-color: var(--color-negative);
+}
+
+.progress-bar--div-left {
+  display: flex;
+  justify-content: start;
+  padding-left: 1rem;
+}
+
+.progress-bar--div-right {
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+}
+
+p.progress__bar-texto-right {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+p.progress__bar-texto-left {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+

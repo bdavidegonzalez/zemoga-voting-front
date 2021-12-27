@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import './card.css';
+@import './progress-bar.css';
+
 :root {
     --color-green-positive: 60, 187, 180;
     --color-yellow-negative: 249, 173, 29;
@@ -9,12 +13,13 @@
     --color-light-background: rgba(255, 255, 255, .4);
     --color-lighter-background: rgba(255, 255, 255, .8);
     --color-white: rgba(255, 255, 255, 1);
+    --color-positive: rgba(60, 187, 180, 0.6);
+    --color-negative: rgba(249, 173, 29, 0.6);
 }
 
 html, body {
     width: 100%;
     margin: 0;
-    background-color: var(--color-white);
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 400;
