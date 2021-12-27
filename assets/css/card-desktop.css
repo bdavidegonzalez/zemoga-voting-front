@@ -1,0 +1,57 @@
+.votes__container-desktop {
+    display: flex;
+    padding: 2rem;
+}
+
+.votes__title-desktop {
+    padding-left: 16rem;
+}
+
+.votes__featured-card-desktop {
+    display: grid;
+    
+}
+
+.votes {
+    margin: 1rem;
+}
+
+.votes__desc-desktop {
+    color: var(--color-white);
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.votes__title-desktop {
+    padding-inline-start: 10rem;
+}
+
+.votes__title-desktop > h2 {
+    color: var(--color-white);
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.75rem;
+}
+
+.votes__title-desktop > p {
+    color: var(--color-white);
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.votes__featured-card-desktop > strong{
+    color: var(--color-white);
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.votes__buttom-card-desktop {
+    display: flex;
+}

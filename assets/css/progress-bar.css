@@ -22,13 +22,13 @@
 .progress-bar--div-left {
   display: flex;
   justify-content: start;
-  padding-left: 1rem;
+  padding: 1rem;
 }
 
 .progress-bar--div-right {
   display: flex;
   justify-content: end;
-  padding-right: 1rem;
+  padding: 1rem;
 }
 
 p.progress__bar-texto-right {

@@ -4,17 +4,20 @@
  <div class="max-centered">
     <Banner />
     <Aside />
-    <voting />
+    <Mobile-votes />
+    <Desktop-votes />
     <Footer />
   </div>
 </div>
 </template>
 
 <script lang="ts">
-import voting from '~/components/voting.vue';
+import mobileVotes from '~/components/mobile-votes.vue';
+import voting from '~/components/mobile-votes.vue';
 
 
 export default {
+  components: { mobileVotes },
   name: 'home',
   data: () => ({
     //

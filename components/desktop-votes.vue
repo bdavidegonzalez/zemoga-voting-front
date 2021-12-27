@@ -1,30 +1,39 @@
 <template>
   <main role="main">
-    <div class="v-card" v-for="(item, index) in categories" :key="index">
-     <div class="v-card-img" :style="{ '--img-background': 'url('+ item.picture.toString() + ')' }">
-       <div>
-        <div class="v-card__description">
-            <h2 class="v-card__title">{{item.category}}</h2>
-            <p class="v-card__desc">
-              {{item.description}}
-            </p>
-            <div class="v-card__date">
-              <strong>{{$moment(item.lastUpdated).format('LLLL')}}</strong>
+    <v-container fluid>
+        <v-row align="center">
+                <v-col class="d-flex" cols="12" sm="6">
+                    <h1>Previous Rulings</h1>
+                </v-col>
+                <v-col class="d-flex" cols="12" sm="6"></v-col>
+        </v-row>
+    </v-container>
+    <div class="votes d-sm-flex" v-for="(item, index) in categories" :key="index">
+     <div class="votes-img" :style="{ '--img-background': 'url('+ item.picture.toString() + ')' }">
+        <div class="votes__container-desktop">
+            <div class="votes__title-desktop">
+                <h2>{{item.category}}</h2>
+                <p>
+                {{item.description}}
+                </p>
             </div>
-          </div>
-          <div class="votes__featured-card">
-            <button  class="icon-button-votes" aria-label="thumbs up" @click="thumbsUp(index, item.votes)">
-              <img class="votes__featured-img" src="../assets/img/thumbs-up.svg" alt="thumbs up" />
-            </button>
-            <button class="icon-button-votes" aria-label="thumbs down" @click="thumbsDown(index, item.votes)">
-              <img class="votes__featured-img" src="../assets/img/thumbs-down.svg" alt="thumbs down" />
-            </button>
-            <button class="votes__featured-buttom">
-              Vote Now
-            </button>
-          </div>
+            <div class="votes__featured-card-desktop">
+                 <strong>{{$moment(item.lastUpdated).format('LLLL')}}</strong>
+               <div class="votes__buttom-card-desktop">
+                <button  class="icon-button-votes" aria-label="thumbs up" @click="thumbsUp(index, item.votes)">
+                    <img class="votes__featured-img" src="../assets/img/thumbs-up.svg" alt="thumbs up" />
+                </button>
+                <button class="icon-button-votes" aria-label="thumbs down" @click="thumbsDown(index, item.votes)">
+                    <img class="votes__featured-img" src="../assets/img/thumbs-down.svg" alt="thumbs down" />
+                </button>
+                <button class="votes__featured-buttom">
+                Vote Now
+                </button>
+               </div>
+            </div>
+            
         </div>
-       <div class="div-prueba">
+        <div>
         <div class="progress"> 
             <div class="progress-bar bg-positive color-width" :style="{'--progress-votes': item.votes.positive * 100 / (item.votes.positive + item.votes.negative) + '%'}"> 
               <div class="progress-bar--div-left">
@@ -46,11 +55,19 @@
 </template>
 
 <script>
+import mobileVotes from './mobile-votes.vue';
 export default {
+  components: { mobileVotes },
   name: 'Voting',
   data() {
     return {
+      model: 0,
       categories: [],
+      column:[],
+    items: [
+      { text: 'List' },
+      { text: 'Grid' }
+    ]
     };
   },
   created() {
